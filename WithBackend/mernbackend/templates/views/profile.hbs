@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <p>Email: {{userData.email}}</p>
+    <p>Firstname: {{userData.Firstname}}</p>
+    <p>Lastname: {{userData.Lastname}}</p>
+
+    <h2>Task Details:</h2>
+    <ul>
+        {{#each tasks}}
+            <li>
+                <p>Task Name: {{TaskName}}</p>
+                <p>Deadline: {{Deadline}}</p>
+                <p>Priority: {{Priority}}</p>
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>
